@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="texto"></div>
+</body>
+<script>
+    class Pessoa {
+
+    constructor(nome, sobrenome) {
+
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+        }
+        
+        obtemNomeCompleto(){
+        return this.nome + ' ' + this.sobrenome;
+    }
+    }
+
+    var pessoa = new Pessoa('Flavio', 'Almeida');
+    document.write('Nome completo: ' + pessoa.obtemNomeCompleto())
+
+</script>
+</html>

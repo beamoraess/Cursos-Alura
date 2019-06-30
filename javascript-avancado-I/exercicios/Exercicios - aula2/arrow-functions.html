@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tranformar em arrow functions</p>
+
+
+    <script>
+    //    let aprovados = avaliacoes
+    // .filter(function(prova) { return prova.nota >= 7; })
+    // .map(function(prova) { return prova.aluno.nome;});
+
+    let aprovados = avaliacoes
+    .filter((prova) => prova.nota >= 7)
+    .map((prova) => prova.aluno.nome); 
+    </script>
+</body>
+</html>

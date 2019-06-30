@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    class Conta {
+
+    constructor(titular, conta) {
+
+    this._titular = titular;
+    this._conta = conta;
+    this._saldo = 0.0;
+    }
+
+    deposita(valor) {
+    console.log('Valor depositado: ' + valor);
+    this._saldo+=valor; 
+    }
+
+    get saldo() {
+    return this._saldo;
+    }
+
+    get titular() {
+    return this._titular;
+    }
+
+    get  conta() {
+    return this._conta;
+}
+    }
+
+var conta = new Conta('Mingau', 171);
+conta.deposita(100);
+console.log(conta.saldo);
+console.log(conta.titular);
+console.log(conta.conta);
+
+</script>
+</html>
+
+
